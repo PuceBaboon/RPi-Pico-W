@@ -17,7 +17,7 @@ The simplest way to upload it to the Pico-W is to hold the button down on the Pi
 
 Once the file is uploaded, the Pico will automatically unmount the /media/XXXXX/RPI-RP2 filesystem and restart.  Your system should then automatically create /dev/ttyACM0, allowing you connect using minicom, screen or whatever terminal-emulation program you prefer (the baud rate is 115200).
 
-The initial start-up messages will tell you what IP address the Pico-W has been assigned on your network (you should be able to ping it at this point) and the host name of the NTP server to which it is trying to connect.  From that point (assuming the NTP call succeeded) you should see the date and time incrementing every second.  The on-board LED on the Pico-W should also be toggling on and off as the seconds change, too.
+The initial start-up messages will tell you what IP address the Pico-W has been assigned on your network (you should be able to ping it at this point) and the host name of the NTP server to which it is trying to connect.  From that point (assuming the NTP call succeeded) you should see the date and time incrementing every second.  The on-board LED on the Pico-W should be toggling on and off as the seconds change, too.
 
 
 
