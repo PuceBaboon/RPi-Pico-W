@@ -9,11 +9,11 @@ PlatformIO/Arduino C/C++ Examples For The Raspberry-Pi Pico-W
 
 
 ## Use
-I'm assuming that, by virtue of being here, that you already have PlatformIO installed.  In that case you really just need to do "pio run" and the settings in the platformio.ini will cause the support framework for the Pico-W to be automatically downloaded.
+I'm assuming that, by virtue of being here, you already have PlatformIO installed.  In that case you really just need to do "pio run" and the settings in the platformio.ini will cause the support framework for the Pico-W to be automatically downloaded.
 
 Once the firmware is built, you'll find the firmware.uf2 file in:-  .pio/build/rpipicow/
 
-The simplest way to upload it to the Pico-W is to hold the button down on the Pico-W board while plugging it into a USB port and then just copy the firmware.uf2 file to /media/<YOUR-ID>/RPI-RP2 (where "<YOUR-ID>" is your username). If you're that way inclined, you can drag-and-drop the file there, instead.
+The simplest way to upload it to the Pico-W is to hold the button down on the Pico-W board while plugging it into a USB port and then just copy the firmware.uf2 file to /media/XXXXX/RPI-RP2 (where "XXXXX" is your username). If you're that way inclined, you can drag-and-drop the file there, instead.
 
 Once the file is uploaded, the Pico will automatically unmount the /media/XXXXX/RPI-RP2 filesystem and restart.  Your system should then automatically create /dev/ttyACM0, allowing you connect using minicom, screen or whatever terminal-emulation program you prefer (the baud rate is 115200).
 
